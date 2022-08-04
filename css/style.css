@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(218, 23%, 16%);
+}
+
+.mainContent {
+    width: 85%;
+    max-width: 450px;
+    height: 376px;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+
+.advice {
+    width: 100%;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: hsl(150, 100%, 66%);
+}
+
+.randomPhraseContainer {
+    margin-top: 25px;
+
+    font-size: 50px;
+    line-height: 35px;
+    color: hsl(193, 38%, 86%);
+}
+
+.randomPhrase {
+    font-size: 28px;
+}
+
+.divider {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    background-image: url(../images/pattern-divider-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.diceContainer {
+    width: 80px;
+    height: 70px;
+    bottom: -10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.diceContainer:hover {
+    cursor: pointer;
+    background-color: hsl(217, 19%, 38%);
+}
+
+.diceContainer:active {
+    opacity: 0.6;
+}
+
+.diceContainer img {
+    width: 35%;
+}
