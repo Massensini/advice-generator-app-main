@@ -69,7 +69,7 @@ body {
 .diceContainer {
     width: 80px;
     height: 70px;
-    bottom: -10%;
+    bottom: -2rem;
 
     display: flex;
     align-items: center;
@@ -80,11 +80,12 @@ body {
     border-radius: 50%;
     border: none;
     outline: none;
+    transition: all 0.2s ease-in;
 }
 
 .diceContainer:hover {
     cursor: pointer;
-    background-color: hsl(217, 19%, 38%);
+    opacity: 0.6;
 }
 
 .diceContainer:active {
